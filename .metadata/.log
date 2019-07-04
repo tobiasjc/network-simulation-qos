@@ -1,0 +1,3060 @@
+!SESSION 2019-06-29 21:08:15.296 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_212
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-06-29 21:08:59.755
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-06-29 21:09:11.349
+!MESSAGE Setup tasks were performed during startup updating 310 preferences. See '/home/josetobias/eclipse/java-2019-06/eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
+!SESSION 2019-06-29 21:09:34.082 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_212
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/home/josetobias/Documents/AD-Workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-06-29 21:09:35.935
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.python.pydev.shared_core 4 4 2019-06-29 21:10:14.768
+!MESSAGE Python not configured.
+!STACK 0
+org.python.pydev.core.NotConfiguredInterpreterException: Python not configured.
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getDefaultInterpreterInfo(AbstractInterpreterManager.java:239)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1356)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:520)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:503)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:57)
+	at org.python.pydev.plugin.nature.PythonPathNature.getProjectSourcePath(PythonPathNature.java:385)
+	at org.python.pydev.plugin.nature.PythonPathNature.getProjectSourcePath(PythonPathNature.java:332)
+	at org.python.pydev.plugin.nature.PythonPathNature.getProjectSourcePathSet(PythonPathNature.java:326)
+	at org.python.pydev.navigator.PythonModelProvider.doWrapPossibleSourceFolder(PythonModelProvider.java:567)
+	at org.python.pydev.navigator.PythonModelProvider.doWrap(PythonModelProvider.java:515)
+	at org.python.pydev.navigator.PythonModelProvider.wrapChildren(PythonModelProvider.java:473)
+	at org.python.pydev.navigator.PythonModelProvider.convertToPythonElementsAddOrRemove(PythonModelProvider.java:374)
+	at org.python.pydev.navigator.PythonModelProvider.interceptAdd(PythonModelProvider.java:224)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.interceptAdd(SafeDelegateTreeContentProvider.java:202)
+	at org.eclipse.ui.internal.navigator.NavigatorPipelineService$1.run(NavigatorPipelineService.java:85)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.navigator.NavigatorPipelineService.pipelineInterceptAdd(NavigatorPipelineService.java:80)
+	at org.eclipse.ui.internal.navigator.NavigatorPipelineService.interceptAdd(NavigatorPipelineService.java:61)
+	at org.eclipse.ui.navigator.CommonViewer.add(CommonViewer.java:300)
+	at org.python.pydev.navigator.PythonBaseModelProvider$3.run(PythonBaseModelProvider.java:1206)
+	at org.python.pydev.navigator.PythonBaseModelProvider.runUpdates(PythonBaseModelProvider.java:1054)
+	at org.python.pydev.navigator.PythonBaseModelProvider.access$0(PythonBaseModelProvider.java:1030)
+	at org.python.pydev.navigator.PythonBaseModelProvider$2.run(PythonBaseModelProvider.java:1018)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5113)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4666)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:370)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1035)
+	at org.eclipse.ui.internal.wizards.datatransfer.WizardProjectsImportPage.createProjects(WizardProjectsImportPage.java:1235)
+	at org.eclipse.ui.wizards.datatransfer.ExternalProjectImportWizard.performFinish(ExternalProjectImportWizard.java:112)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:833)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:472)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:622)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5874)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1400)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5138)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4663)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.handlers.WizardHandler$Import.executeHandler(WizardHandler.java:151)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:280)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:320)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:498)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:392)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:142)
+	at org.eclipse.ui.internal.actions.CommandAction.run(CommandAction.java:152)
+	at org.eclipse.ui.actions.ImportResourcesAction.run(ImportResourcesAction.java:100)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.runWithEvent(BaseSelectionListenerAction.java:171)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:412)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5874)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1400)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5138)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+
+!ENTRY org.python.pydev.shared_core 4 4 2019-06-29 21:10:14.841
+!MESSAGE Info: Rebuilding internal caches: /home/josetobias/Documents/AD-Workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/router_selective_queue/com.python.pydev.analysis/AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 1 1 2019-06-29 21:10:22.719
+!MESSAGE - Ok, file is non-null. Getting info on:/usr/bin/python
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/bin/python
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/bin/python</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python2
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python2</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python2.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python2.7</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python3
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.7</version>
+<executable>/usr/bin/python3</executable>
+<lib>/usr/lib/python3.7</lib>
+<lib>/usr/lib/python3.7/lib-dynload</lib>
+<lib>/home/josetobias/.local/lib/python3.7/site-packages</lib>
+<lib>/usr/local/lib/python3.7/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>37</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python3.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.7</version>
+<executable>/usr/bin/python3.7</executable>
+<lib>/usr/lib/python3.7</lib>
+<lib>/usr/lib/python3.7/lib-dynload</lib>
+<lib>/home/josetobias/.local/lib/python3.7/site-packages</lib>
+<lib>/usr/local/lib/python3.7/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>37</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/bin/python2
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/bin/python2</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/bin/python2.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/bin/python2.7</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/bin/python3
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.7</version>
+<executable>/bin/python3</executable>
+<lib>/usr/lib/python3.7</lib>
+<lib>/usr/lib/python3.7/lib-dynload</lib>
+<lib>/home/josetobias/.local/lib/python3.7/site-packages</lib>
+<lib>/usr/local/lib/python3.7/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>37</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/bin/python3.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.7</version>
+<executable>/bin/python3.7</executable>
+<lib>/usr/lib/python3.7</lib>
+<lib>/usr/lib/python3.7/lib-dynload</lib>
+<lib>/home/josetobias/.local/lib/python3.7/site-packages</lib>
+<lib>/usr/local/lib/python3.7/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>37</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python3.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.7</version>
+<executable>/usr/bin/python3.7</executable>
+<lib>/usr/lib/python3.7</lib>
+<lib>/usr/lib/python3.7/lib-dynload</lib>
+<lib>/home/josetobias/.local/lib/python3.7/site-packages</lib>
+<lib>/usr/local/lib/python3.7/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>37</value></string_substitution_var>
+</xml>
+
+!STACK 0
+java.lang.RuntimeException: - Ok, file is non-null. Getting info on:/usr/bin/python
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/bin/python
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /bin/python -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/bin/python</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python2
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python2</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python2.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python2.7</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python3
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.7</version>
+<executable>/usr/bin/python3</executable>
+<lib>/usr/lib/python3.7</lib>
+<lib>/usr/lib/python3.7/lib-dynload</lib>
+<lib>/home/josetobias/.local/lib/python3.7/site-packages</lib>
+<lib>/usr/local/lib/python3.7/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>37</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python3.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.7</version>
+<executable>/usr/bin/python3.7</executable>
+<lib>/usr/lib/python3.7</lib>
+<lib>/usr/lib/python3.7/lib-dynload</lib>
+<lib>/home/josetobias/.local/lib/python3.7/site-packages</lib>
+<lib>/usr/local/lib/python3.7/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>37</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/bin/python2
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /bin/python2 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/bin/python2</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/bin/python2.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /bin/python2.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/bin/python2.7</executable>
+<lib>/usr/lib/python2.7</lib>
+<lib>/usr/lib/python2.7/plat-x86_64-linux-gnu</lib>
+<lib>/usr/lib/python2.7/lib-tk</lib>
+<lib>/usr/lib/python2.7/lib-dynload</lib>
+<lib>/usr/local/lib/python2.7/dist-packages</lib>
+<lib>/usr/lib/python2.7/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/bin/python3
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /bin/python3 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.7</version>
+<executable>/bin/python3</executable>
+<lib>/usr/lib/python3.7</lib>
+<lib>/usr/lib/python3.7/lib-dynload</lib>
+<lib>/home/josetobias/.local/lib/python3.7/site-packages</lib>
+<lib>/usr/local/lib/python3.7/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>37</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/bin/python3.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.7</version>
+<executable>/bin/python3.7</executable>
+<lib>/usr/lib/python3.7</lib>
+<lib>/usr/lib/python3.7/lib-dynload</lib>
+<lib>/home/josetobias/.local/lib/python3.7/site-packages</lib>
+<lib>/usr/local/lib/python3.7/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>37</value></string_substitution_var>
+</xml>
+- Ok, file is non-null. Getting info on:/usr/bin/python3.7
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python3.7 -u /home/josetobias/.p2/pool/plugins/org.python.pydev.core_7.2.1.201904261721/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.7</version>
+<executable>/usr/bin/python3.7</executable>
+<lib>/usr/lib/python3.7</lib>
+<lib>/usr/lib/python3.7/lib-dynload</lib>
+<lib>/home/josetobias/.local/lib/python3.7/site-packages</lib>
+<lib>/usr/local/lib/python3.7/dist-packages</lib>
+<lib>/usr/lib/python3/dist-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_elementtree</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_posixsubprocess</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_socket</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>fcntl</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>grp</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pyexpat</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>select</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>spwd</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>syslog</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>unicodedata</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>37</value></string_substitution_var>
+</xml>
+
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.applyOperation(AutoConfigMaker.java:191)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.autoConfigSingleApply(AutoConfigMaker.java:128)
+	at org.python.pydev.plugin.ConfigureInterpreterJob.runInUIThread(ConfigureInterpreterJob.java:63)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5113)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4666)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+
+!ENTRY org.python.pydev.shared_core 1 1 2019-06-29 21:10:22.723
+!MESSAGE Restoring info for: /usr/bin/python3.7
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /usr/bin/python3.7
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:453)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:279)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:576)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker$1.run(AutoConfigMaker.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Expecting: /home/josetobias/Documents/AD-Workspace/.metadata/.plugins/org.python.pydev/v1_5y9sn6c2mdu4m5b0isbprz5jd/modulesKeys to exist (and be a file).
+	at org.python.pydev.ast.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:296)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:400)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:451)
+	... 4 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2019-06-29 21:10:22.845
+!MESSAGE Finished restoring information for: /usr/bin/python3.7 at: /home/josetobias/Documents/AD-Workspace/.metadata/.plugins/org.python.pydev/v1_5y9sn6c2mdu4m5b0isbprz5jd
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /usr/bin/python3.7 at: /home/josetobias/Documents/AD-Workspace/.metadata/.plugins/org.python.pydev/v1_5y9sn6c2mdu4m5b0isbprz5jd
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:498)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:279)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:576)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker$1.run(AutoConfigMaker.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2019-06-29 21:10:22.920
+!MESSAGE Info: Rebuilding internal caches: /home/josetobias/Documents/AD-Workspace/.metadata/.plugins/com.python.pydev.analysis/python_v1_5y9sn6c2mdu4m5b0isbprz5jd/python.pydevsysteminfo (Expected error to be provided and got no error!)
+!SESSION 2019-06-29 21:10:29.957 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_212
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/home/josetobias/Documents/AD-Workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-06-29 21:10:31.753
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-06-29 21:30:05.894 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_212
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/home/josetobias/Documents/AD-Workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-06-29 21:30:07.882
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-06-29 21:30:18.910
+!MESSAGE Setup tasks were performed during startup updating 310 preferences. See '/home/josetobias/eclipse/java-2019-06/eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
+!SESSION 2019-06-30 03:50:33.759 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_212
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-06-30 03:50:38.210
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.core 1 0 2019-06-30 03:50:39.617
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-06-30 03:50:52.200
+!MESSAGE Setup tasks were performed during startup updating 345 preferences. See '/home/josetobias/eclipse/java-2019-06/eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
+
+!ENTRY org.python.pydev.shared_core 4 4 2019-06-30 21:13:39.884
+!MESSAGE Unable to read contents from: /home/josetobias/Documents/AD-Workspace/.metadata/.plugins/org.python.pydev/v1_5y9sn6c2mdu4m5b0isbprz5jd/shell/bui_1qlzok4p37uavez71dro3iv71.top
+!STACK 0
+java.io.EOFException
+	at java.util.zip.GZIPInputStream.readUByte(GZIPInputStream.java:268)
+	at java.util.zip.GZIPInputStream.readUShort(GZIPInputStream.java:258)
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:164)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.getCached(CompiledModule.java:308)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:160)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:351)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:1)
+	at org.python.pydev.ast.codecompletion.revisited.ProjectModulesManager.getModuleAndRelatedModulesManager(ProjectModulesManager.java:201)
+	at org.python.pydev.ast.codecompletion.revisited.ProjectModulesManager.getModule(ProjectModulesManager.java:180)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getModule(AbstractASTManager.java:582)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.internalFindGlobalTokDef(SourceModule.java:1295)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findGlobalTokDef(SourceModule.java:1165)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinitionsFromModAndTok(SourceModule.java:1108)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:1090)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:758)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:1)
+	at org.python.pydev.ast.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:185)
+	at org.python.pydev.ast.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:84)
+	at com.python.pydev.analysis.refactoring.refactorer.RefactorerFindDefinition.findDefinition(RefactorerFindDefinition.java:63)
+	at com.python.pydev.analysis.refactoring.refactorer.Refactorer.findDefinition(Refactorer.java:46)
+	at com.python.pydev.analysis.refactoring.wizards.rename.PyReferenceSearcher.prepareSearch(PyReferenceSearcher.java:110)
+	at com.python.pydev.refactoring.markoccurrences.MarkOccurrencesJob.createRequest(MarkOccurrencesJob.java:147)
+	at org.python.pydev.shared_ui.mark_occurrences.BaseMarkOccurrencesJob.run(BaseMarkOccurrencesJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-07-01 19:05:30.640 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_212
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data /home/josetobias/Documents/AD-Workspace -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-07-01 19:05:32.491
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-07-01 19:05:44.061
+!MESSAGE Setup tasks were performed during startup updating 348 preferences. See '/home/josetobias/eclipse/java-2019-06/eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
+!SESSION 2019-07-02 21:10:13.396 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_212
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-07-02 21:10:26.347
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.core 1 0 2019-07-02 21:10:27.316
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-07-02 21:10:38.571
+!MESSAGE Setup tasks were performed during startup updating 355 preferences. See '/home/josetobias/eclipse/java-2019-06/eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
+!SESSION 2019-07-04 18:08:11.573 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_212
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data /home/jose/Dropbox/JoseCarlosTobias/AD-Workspace -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-07-04 18:08:13.478
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.python.pydev.shared_core 1 1 2019-07-04 18:08:15.995
+!MESSAGE Unable to track file that does not exist: /home/josetobias/.local/lib/python3.7/site-packages
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: /home/josetobias/.local/lib/python3.7/site-packages
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:316)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2019-07-04 18:08:15.997
+!MESSAGE Error. returning: 0
+!STACK 0
+java.nio.file.NoSuchFileException: /home/josetobias/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/io_management.py
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.getLastModifiedTime(Files.java:2266)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1081)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1072)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.addInfoToModuleOnRestoreInsertCommand(AbstractAdditionalDependencyInfo.java:529)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.processInsert(AbstractAdditionalInfoWithBuild.java:192)
+	at org.python.pydev.core.DeltaSaver$DeltaInsertCommand.processWith(DeltaSaver.java:98)
+	at org.python.pydev.core.DeltaSaver.processDeltas(DeltaSaver.java:318)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreSavedInfo(AbstractAdditionalInfoWithBuild.java:103)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.loadContentsFromFile(AbstractAdditionalDependencyInfo.java:499)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.load(AbstractAdditionalDependencyInfo.java:414)
+	at com.python.pydev.analysis.additionalinfo.AdditionalProjectInterpreterInfo.getAdditionalInfoForProject(AdditionalProjectInterpreterInfo.java:247)
+	at com.python.pydev.analysis.additionalinfo.AdditionalProjectInterpreterInfo.recreateAllInfo(AdditionalProjectInterpreterInfo.java:330)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyProjectPythonpathRestored(InterpreterObserver.java:41)
+	at org.python.pydev.plugin.nature.PythonNature$RebuildPythonNatureModules.run(PythonNature.java:200)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-07-04 18:08:23.816
+!MESSAGE Setup tasks were performed during startup updating 6 preferences. See '/home/jose/eclipse/java-2019-06/eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2019-07-04 18:09:21.595
+!MESSAGE api.eclipse.org:443 failed to respond
+!STACK 0
+org.apache.http.NoHttpResponseException: api.eclipse.org:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.userstorage.internal.Session.sendRequest(Session.java:596)
+	at org.eclipse.userstorage.internal.Session$RequestTemplate.send(Session.java:484)
+	at org.eclipse.userstorage.internal.Session.updateBlob(Session.java:282)
+	at org.eclipse.userstorage.internal.Storage.updateBlob(Storage.java:429)
+	at org.eclipse.userstorage.internal.Blob.setContents(Blob.java:118)
+	at org.eclipse.oomph.setup.internal.sync.RemoteDataProvider.update(RemoteDataProvider.java:116)
+	at org.eclipse.oomph.setup.internal.sync.Snapshot.doCommit(Snapshot.java:137)
+	at org.eclipse.oomph.setup.internal.sync.Snapshot.access$1(Snapshot.java:126)
+	at org.eclipse.oomph.setup.internal.sync.Snapshot$WorkingCopy.commit(Snapshot.java:222)
+	at org.eclipse.oomph.setup.internal.sync.Synchronization.doCommit(Synchronization.java:610)
+	at org.eclipse.oomph.setup.internal.sync.Synchronization.commit(Synchronization.java:599)
+	at org.eclipse.oomph.setup.ui.recorder.RecorderManager.handleRecording(RecorderManager.java:630)
+	at org.eclipse.oomph.setup.ui.recorder.RecorderManager.access$10(RecorderManager.java:394)
+	at org.eclipse.oomph.setup.ui.recorder.RecorderManager$DisplayListener$2$1$1.run(RecorderManager.java:1063)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2019-07-04 18:16:54.447
+!MESSAGE Unable to read contents from: /home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/.metadata/.plugins/org.python.pydev/v1_5y9sn6c2mdu4m5b0isbprz5jd/shell/bui_1qlzok4p37uavez71dro3iv71.top
+!STACK 0
+java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:240)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.ObjectInputStream$PeekInputStream.read(ObjectInputStream.java:2663)
+	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2679)
+	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:3156)
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:862)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:358)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.getCached(CompiledModule.java:309)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:160)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:351)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:1)
+	at org.python.pydev.ast.codecompletion.revisited.ProjectModulesManager.getModuleAndRelatedModulesManager(ProjectModulesManager.java:201)
+	at org.python.pydev.ast.codecompletion.revisited.ProjectModulesManager.getModule(ProjectModulesManager.java:180)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getModule(AbstractASTManager.java:582)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.internalFindGlobalTokDef(SourceModule.java:1295)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findGlobalTokDef(SourceModule.java:1165)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinitionsFromModAndTok(SourceModule.java:1108)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:1090)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:758)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:1)
+	at org.python.pydev.ast.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:185)
+	at org.python.pydev.ast.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:84)
+	at org.python.pydev.editor.hover.PyDocstringTextHover.getDocstringHover(PyDocstringTextHover.java:101)
+	at org.python.pydev.editor.hover.PyDocstringTextHover.getHoverInfo(PyDocstringTextHover.java:59)
+	at org.python.pydev.editor.hover.PydevCombiningHover.getHoverInfo(PydevCombiningHover.java:141)
+	at org.python.pydev.editor.hover.PyEditorTextHoverProxy.getHoverInfo(PyEditorTextHoverProxy.java:59)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:171)

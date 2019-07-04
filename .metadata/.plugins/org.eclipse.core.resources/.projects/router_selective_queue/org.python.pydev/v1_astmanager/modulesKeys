@@ -1,0 +1,8 @@
+MODULES_MANAGER_V2
+dispatcher|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/dispatcher.py
+entities|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/entities.py
+generators|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/generators.py
+helpers|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/helpers.py
+io_management|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/io_management.py
+main|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/main.py
+validation|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/validation.py

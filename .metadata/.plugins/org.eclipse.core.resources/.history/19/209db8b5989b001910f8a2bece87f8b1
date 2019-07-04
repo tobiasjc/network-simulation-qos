@@ -1,0 +1,128 @@
+import generators as gens
+import helpers as hlps
+import validation as vldt
+
+
+class ExecutionParameters:
+
+    def __init__(self, next_web_packet, next_voip_arrival):
+        self.next_web_packet = next_web_packet
+        self.next_voip_arrival = next_voip_arrival
+        self.time_actual = 0.0
+        self.time_packet_exit = 0.0
+        self.router_working = False
+
+
+class SystemParameters:
+
+    def __init__(self, simulation_duration, link_size, web_packet_rate, cbr_packet_size, voip_connection_duration, voip_connection_rate):
+        self.simulation_duration = simulation_duration
+        self.link_size = link_size
+        self.web_packet_rate = web_packet_rate
+        self.cbr_packet_size = cbr_packet_size
+        self.voip_connection_duration = voip_connection_duration
+        self.voip_connection_rate = voip_connection_rate
+
+
+def report_state(ep, sp):
+    print("\nExecution parameters: ")
+    print("The actual system time is {} seconds".format(ep.time_actual))
+    print("Next web packet arrival in seconds {}".format(ep.next_web_packet))
+    print("Next VoIP connection arrival in second {}".format(ep.next_voip_arrival))
+    print("The packet in the router will exit in second {}".format(ep.time_packet_exit))
+    print("Is the router working? {}\n".format(ep.router_working))
+
+    print("System parameters: ")
+    print("Simulation duration is {} seconds".format(sp.simulation_duration))
+    print("Link size is {} Megabits".format(sp.link_size))
+    print("Web packet arrival rate is {} per second".format(sp.web_packet_rate))
+    print("CBR packet size is {} Megabits".format(sp.cbr_packet_size))
+    print("VoIP connection duration rate is {} seconds".format(sp.voip_connection_duration))
+    print("VoIP connection arrival rate is {} per second\n".format(sp.voip_connection_rate))
+
+
+def report_validations(val, ep):
+    total_occupancy = val.occupancy / ep.time_actual
+    print("Occupancy = {}".format(total_occupancy))
+    
+    W = val.arrive.area - val.left.area
+    lambd = val.arrive.area / ep.time_actual
+    L = val.total.area
+    
+    print("L = {}, W = {}, lambda = {}, L - lambda*W = {}".format(L, W, lambd, (L - lambd * W)))
+    
+def user_setup():
+    # system
+    simulation_duration = None
+    while True:
+        try:
+            simulation_duration = float(
+                input("Simulation duration (seconds): "))
+        except ValueError:
+            print("Simulation duration in seconds must be float, please enter it again: ")
+        if type(simulation_duration) == float:
+            break
+
+    link_size = None
+    while True:
+        try:
+            link_size = float(input("Link size (Megabits per second): "))
+        except ValueError:
+            print(
+                "Link size in Megabits per seconds must be float, please enter it again: ")
+        if type(link_size) == float:
+            break
+
+    # web
+    web_packet_rate = None
+    while True:
+        try:
+            web_packet_rate = float(input("Web packet interval (seconds): "))
+        except ValueError:
+            print("Web packet interval in seconds must be float, please enter it again: ")
+        if type(web_packet_rate) == float:
+            break
+    web_packet_rate = 1.0 / web_packet_rate
+
+    cbr_packet_size = None
+    while True:
+        try:
+            cbr_packet_size = float(input("CBR packet size (bytes): "))
+        except ValueError:
+            print("CBR packet size in bytes must be float, please enter it again: ")
+        if type(cbr_packet_size) == float:
+            break
+    cbr_packet_size = hlps.byte_to_mb(cbr_packet_size)
+
+    # VoIP
+    voip_connection_duration = None
+    while True:
+        try:
+            voip_connection_duration = float(
+                input("VoIP connection duration (seconds): "))
+        except ValueError:
+            print(
+                "VoIP connection duration in seconds must be float, please enter it again:  ")
+        if type(voip_connection_duration) == float:
+            break
+    voip_connection_duration = 1.0 / voip_connection_duration
+
+    voip_connection_rate = None
+    while True:
+        try:
+            voip_connection_rate = float(
+                input("VoIP connection interval (seconds): "))
+        except ValueError:
+            print(
+                "VoIP connection interval in seconds must be float, please enter it again: ")
+        if type(voip_connection_rate) == float:
+            break
+    voip_connection_rate = 1.0 / voip_connection_rate
+
+    sp = SystemParameters(simulation_duration, link_size, web_packet_rate,
+                          cbr_packet_size, voip_connection_duration, voip_connection_rate)
+    ep = ExecutionParameters(gens.gen_exp(
+        web_packet_rate), gens.gen_exp(voip_connection_rate))
+    val = vldt.Validations()
+    
+    return [sp, ep, val]

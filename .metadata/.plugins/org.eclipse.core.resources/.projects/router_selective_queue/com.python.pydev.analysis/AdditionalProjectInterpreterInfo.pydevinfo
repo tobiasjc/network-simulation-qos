@@ -1,0 +1,95 @@
+-- VERSION_5
+-- START DISKCACHE_2
+/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/router_selective_queue/com.python.pydev.analysis/v2_indexcache
+helpers|1562276991000000000|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/helpers.py
+entities|1562276424000000000|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/entities.py
+generators|1562275835000000000|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/generators.py
+main|1562276294000000000|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/main.py
+dispatcher|1561836506000000000|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/dispatcher.py
+validation|1562275847000000000|/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/validation.py
+-- END DISKCACHE
+-- START DICTIONARY
+23
+15=Accumulator
+11=Packet
+3=/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/generators.py
+14=EventConnection
+7=/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/dispatcher.py
+10=main
+12=EventService
+18=EventArrival.__init__
+16=Validations
+5=/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/validation.py
+22=Accumulator.cummulative_action
+13=EventArrival
+17=EventService.__init__
+2=entities
+23=Packet.__init__
+21=EventConnection.next_event_update
+4=generators
+19=EventConnection.__init__
+20=EventArrival.next_event_update
+8=dispatcher
+6=validation
+9=/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/main.py
+1=/home/jose/Dropbox/JoseCarlosTobias/AD-Workspace/router_selective_queue/entities.py
+-- END DICTIONARY
+-- START TREE 1
+23
+_cb|1|_CBR!1^7#1*19@
+_ge|1|_gen_factor!3^7#5*34@
+_se|1|_SERVICE!1^9#1*19@
+_vo|1|_VOIP!1^6#1*19@
+_we|1|_WEB!1^8#1*19@
+acc|1|Accumulator!5^4#7*49@
+bal|1|balance_dispatch!7^1#5*66@
+byt|0|
+cbr|3|cbr_queue!9^19#5*83@cbr!9^66#13*83@cbr_interval!9^60#13*83@
+con|1|conn!9^62#13*83@
+dur|1|duration!9^59#13*83@
+eve|4|EventConnection!1^70#7*17@EventArrival!1^45#7*17@events!9^22#5*83@EventService!1^30#7*17@
+exe|0|
+gen|3|gen_packet_size!3^15#5*34@gen_cbr_interval!3^26#5*34@gen_exp!3^11#5*34@
+hap|1|happening!9^37#9*83@
+ini|2|initial_event_voip!9^30#5*83@initial_event_web!9^26#5*83@
+pac|3|packet!9^45#13*83@packet_dispatch!7^9#5*66@Packet!1^12#7*17@
+rep|0|
+ser|1|service!9^50#17*83@
+sys|0|
+use|0|
+val|1|Validations!5^22#7*49@
+web|1|web_queue!9^18#5*83@
+-- END TREE
+-- START TREE 2
+30
+__i|4|__init__!11&1^14#9*18@__init__!12&1^32#9*18@__init__!13&1^47#9*18@__init__!14&1^72#9*18@
+__l|4|__lt__!11&1^21#9*18@__lt__!12&1^36#9*18@__lt__!13&1^61#9*18@__lt__!14&1^86#9*18@
+__r|4|__repr__!11&1^27#5*19@__repr__!12&1^42#5*19@__repr__!13&1^67#5*19@__repr__!14&1^92#5*19@
+__s|4|__str__!11&1^24#9*18@__str__!12&1^39#9*18@__str__!13&1^64#9*18@__str__!14&1^89#9*18@
+are|1|area!15&5^6#5*51@
+arr|1|arrive!16&5^25#5*51@
+cas|3|case!17&1^33#9*19@case!18&1^50#9*19@case!19&1^75#9*19@
+cbr|1|cbr_interval!19&1^78#9*19@
+cum|1|cummulative_action!15&5^9#9*50@
+del|1|delay!11&1^18#9*18@
+end|1|end!19&1^77#9*19@
+ent|1|enter!16&5^28#9*50@
+ep|2|ep!18&1^48#9*19@ep!19&1^73#9*19@
+exi|1|exit!16&5^32#9*50@
+is_|1|is_over!14&1^80#9*18@
+lef|1|left!16&5^26#5*51@
+lin|0|
+nex|7|next_event!17&1^34#9*19@next_event!18&1^51#9*19@next_event!20&1^57#13*19@next_event!19&1^76#9*19@next_event!21&1^84#9*19@next_event_update!13&1^53#9*18@next_event_update!14&1^83#9*18@
+occ|1|occupancy!16&5^23#5*51@
+pac|1|packets_count!15&5^7#5*51@
+pas|2|past_time!15&5^5#5*51@past_time!22&5^11#9*51@
+rou|0|
+sim|0|
+siz|1|size!23&1^16#9*19@
+sp|2|sp!18&1^49#9*19@sp!19&1^74#9*19@
+tim|1|time_arrival!23&1^15#9*19@
+tot|1|total!16&5^24#5*51@
+use|1|use!16&5^36#9*50@
+voi|0|
+web|0|
+-- END TREE

@@ -1,0 +1,12 @@
+coverage_stylePreferences=BOX
+coverage_text=true
+eclipse.preferences.version=1
+highlight.text.style=UNDERLINE
+hyperlinkColor=28,141,155
+org.eclipse.cdt.ui.isOccurrenceGoToNextNavigationTarget=false
+org.eclipse.cdt.ui.occurrenceIndicationColor=212,212,212
+org.eclipse.cdt.ui.occurrenceIndicationInVerticalRuler=false
+org.eclipse.cdt.ui.writeOccurrenceIndicationColor=240,216,168
+overviewRuler_migration=migrated_3.1
+thcoverage_stylePreferences=BOX
+thcoverage_text=true

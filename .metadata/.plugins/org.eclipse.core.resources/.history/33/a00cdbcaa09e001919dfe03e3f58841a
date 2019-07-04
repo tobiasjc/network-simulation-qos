@@ -1,0 +1,2 @@
+def byte_to_mb(v: float) -> float:
+    return (v * 8) / 1000000.00

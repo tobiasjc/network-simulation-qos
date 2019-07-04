@@ -1,0 +1,107 @@
+import heapq
+import random
+
+import dispatcher as dsp
+import generators as gens
+import io_management as IO
+import users
+
+
+if __name__ == "__main__":
+    # set seed before any operation
+    random.seed(1000)
+
+    # read user's input
+    [sp, ep, val] = IO.user_setup()
+
+    # setup two normal queues: one for web packets, one for CBR packets
+    web_queue: [users.Packet] = []
+    cbr_queue: [users.Packet] = []
+
+    # setup the priority queue of events: events that should happen first, are going to happen first
+    events = []
+    heapq.heapify(events)
+
+    # setup two initial events: web packet arrival and VoIP connection arrival, and push them to the events queue
+    initial_event_web = users.EventArrival(ep, sp, users._WEB)
+    initial_event_web.next_event_update()
+    heapq.heappush(events, initial_event_web)
+
+    initial_event_voip = users.EventArrival(ep, sp, users._VOIP)
+    initial_event_voip.next_event_update()
+    heapq.heappush(events, initial_event_voip)
+
+    while ep.time_actual <= sp.simulation_duration:
+        happening = heapq.heappop(events)
+
+        if happening.case == users._WEB:
+            ep.time_actual = happening.next_event
+            happening.next_event_update()
+            heapq.heappush(events, happening)
+
+            packet = users.Packet(ep.time_actual, gens.gen_packet_size())
+            web_queue.append(packet)
+
+            if len(cbr_queue) == 0 and not ep.router_working:
+                service = users.EventService(users._SERVICE, ep.time_actual)
+                heapq.heappush(events, service)
+
+        if happening.case == users._VOIP:
+            ep.time_actual = happening.next_event
+            happening.next_event_update()
+            heapq.heappush(events, happening)
+
+            duration = gens.gen_exp(sp.voip_connection_duration)
+            cbr_interval = gens.gen_cbr_interval()
+
+            conn = users.EventConnection(
+                ep, sp, users._CBR, duration, cbr_interval)
+            conn.next_event_update()
+            heapq.heappush(events, conn)
+
+            cbr = users.Packet(ep.time_actual, sp.cbr_packet_size)
+            cbr_queue.append(cbr)
+
+            if len(web_queue) == 0 and not ep.router_working:
+                service = users.EventService(users._SERVICE, ep.time_actual)
+                heapq.heappush(events, service)
+
+        if happening.case == users._CBR:
+            ep.time_actual = happening.next_event
+            happening.next_event_update()
+
+            if not happening.is_over():
+                heapq.heappush(events, happening)
+
+            cbr = users.Packet(ep.time_actual, sp.cbr_packet_size)
+            cbr_queue.append(cbr)
+
+            if len(web_queue) == 0 and not ep.router_working:
+                service = users.EventService(users._SERVICE, ep.time_actual)
+                heapq.heappush(events, service)
+
+        if happening.case == users._SERVICE:
+            ep.time_actual = happening.next_event
+
+            if len(web_queue) == 0 and len(cbr_queue) == 0:
+                ep.router_working = False
+            elif len(web_queue) == 0:
+                dsp.packet_dispatch(cbr_queue, ep, sp, val)
+                service = users.EventService(
+                    users._SERVICE, ep.time_packet_exit)
+                heapq.heappush(events, service)
+            elif len(cbr_queue) == 0:
+                dsp.packet_dispatch(web_queue, ep, sp, val)
+                service = users.EventService(
+                    users._SERVICE, ep.time_packet_exit)
+                heapq.heappush(events, service)
+            else:
+                dsp.balance_dispatch(web_queue, cbr_queue, ep, sp, val)
+                service = users.EventService(
+                    users._SERVICE, ep.time_packet_exit)
+                heapq.heappush(events, service)
+
+    IO.report_validations(val, ep)
+    
+# Occupancy = 0.725957784829624
+# 6091049784137527
